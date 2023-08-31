@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        
+        <link rel="perconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+        <title>Landing Page</title>
+        <style type="text/css">
+            *{
+               padding: 0;
+               margin: 0;
+               box-sizing: border-box;
+           }
+           header{
+               width: 100%;
+               height: 100%;
+               background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url("background1.jpg");
+               background-size: cover;
+               background-repeat: no-repeat;
+               background-position: center center;
+           }
+           nav{
+               width:100%;
+               height: 100px;
+               background-size: cover;
+               color: white;
+               display: flex;
+               align-items: center;
+               font-family: sans-serif;
+               justify-content: space-around;
+           }
+           .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+            color: orangered;
+           }
+           .logo:hover{
+            color:blue;
+           }
+           .Menu a{
+            text-decoration: dashed;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+
+          }
+          .Menu a:before{
+            content:'';
+            position: absolute;
+            top:0;
+            left:0;
+            width:0%;
+            height:100%;
+            border-bottom: 2px solid orange;
+            transition: 0.4s linear;
+
+          }
+          .Menu a:hover:before{
+            width:90%;
+          }
+          .ship a{
+            text-decoration: dotted;
+            color: blue;
+            background-color: yellowgreen;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: 0.4s;
+          }
+          .ship a:hover{
+            background: transparent;
+            border: 1px solid red;
+            color:aqua;
+            
+          }
+          .login a{
+            text-decoration: dotted;
+            color: blue;
+            background-color: yellowgreen;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: 0.4s;
+          }
+          .login a:hover{
+            background: transparent;
+            border: 1px solid red;
+            color: aquamarine;
+            
+          }
+          h1{
+            text-decoration: dashed;
+            font-size:50px;
+            color: aquamarine;
+            position: absolute;
+            margin-top: 20px;
+          }
+          .logo-container{
+            text-align: center;
+          }
+          .start a{
+            text-decoration: none;
+            color: red;
+            background-color: yellow;
+            padding: 12px 20px;
+            transition: 0.4s linear;
+            position: relative; 
+            z-index: 1; 
+            text-align:center;
+            left: 600px;
+            top: -150px;
+
+          }
+          .start a:hover{
+            color: yellow;
+            background: red;
+            border: 1px solid blue;
+
+          }
+          footer{
+            background-color: #333;
+            color:white;
+            text-align: center;
+            padding: 15px 0px;
+          }
+          .footer-content{
+            max-width: 1200px;
+            margin:0 auto;
+          }
+          .footer-content p{
+            margin-bottom: 10px;
+          }
+          ul{
+            list-style: none;
+            padding: 0;
+          }
+          ul li{
+            display: inline;
+            margin-right: 15px;
+          }
+          ul li a{
+            color: white;
+            text-decoration: none;
+          }
+          h2{
+            color: aqua;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:30px;
+            margin-top:-120px;
+            margin-left: 300px;
+            bottom:100px;
+
+          }
+          
+          
+          
+         
+          
+
+
+       </style>
+    </head>
+   
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <b>express-way</b>
+                </div>
+                <div class="Menu">
+                    <a href="#"><b>Home</b></a>
+                    <a href="#"><b>About us</b></a>
+                    <a href="#"><b>Track</b></a>
+                    <a href="#"><b>Help</b></a>
+
+
+                </div>
+                <div class="ship">
+                    <a href="#"><b>Ship With us</b></a>
+                </div>
+                <div class="login">
+                    <a href="#"><b>Customer login</b></a>
+                </div>
+            </nav>
+            <h1>
+                <span><b>We Offer </b></span><br>
+                <span><b>Possibilities in every Direction</b></span>
+            </h1>
+            <br>
+            <br>
+
+          
+                <div class="logo-container">
+                    <a href="D:\CourierServiceWebpageLayout\express-waylogo.png">
+                        <img src="D:\CourierServiceWebpageLayout\express-waylogo.png" alt="express-way">
+                     </a>
+                 </div>
+            <br>
+            <br>
+            <br>
+            <div class="start">
+              <a href="#"><b>Start Shipping</b></a>
+            </div>
+            <h2>
+              <span><b>We are connecting more than 10,000 people</b></span><br>
+              <span><b>They can send or recieve items faster</b></span><br>
+              <span><b>We are continuosly improving our services</b></span><br>
+              <span><b>We provide our service in every part of India.</b></span>
+            </h2>
+           
+
+        </header>
+        <footer>
+          <div class="footer-content">
+              <p>&copy; 2023 Express-Way. All rights reserved.</p>
+              <ul>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+          </div>
+      </footer>
+      
+
+    </body>
+</html>
